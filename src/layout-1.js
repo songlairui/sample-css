@@ -1,4 +1,5 @@
-const $el = document.querySelector(".content");
+import "./layout-1.css";
+
 const $ul = document.querySelector(".content > ul");
 
 const $body = document.documentElement;
@@ -13,7 +14,7 @@ const $contents = [1, 100].map(length =>
     })
 );
 
-let current = 0;
+let current = 1;
 
 $body.addEventListener("click", e => {
   if (e.target.tagName !== "BUTTON") return;
